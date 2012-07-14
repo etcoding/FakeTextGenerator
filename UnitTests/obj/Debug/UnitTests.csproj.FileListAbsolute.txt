@@ -1,0 +1,15 @@
+S:\Code\FakeTextGenerator\UnitTests\obj\Debug\ResolveAssemblyReference.cache
+S:\Code\FakeTextGenerator\UnitTests\bin\Debug\UnitTests.dll
+S:\Code\FakeTextGenerator\UnitTests\bin\Debug\UnitTests.pdb
+S:\Code\FakeTextGenerator\UnitTests\bin\Debug\FakeTextGenerator.dll
+S:\Code\FakeTextGenerator\UnitTests\bin\Debug\FluentAssertions.dll
+S:\Code\FakeTextGenerator\UnitTests\bin\Debug\FakeTextGenerator.pdb
+S:\Code\FakeTextGenerator\UnitTests\bin\Debug\FluentAssertions.pdb
+S:\Code\FakeTextGenerator\UnitTests\bin\Debug\FluentAssertions.xml
+S:\Code\FakeTextGenerator\UnitTests\obj\Debug\UnitTests.dll
+S:\Code\FakeTextGenerator\UnitTests\obj\Debug\UnitTests.pdb
+S:\Code\FakeTextGenerator\UnitTests\bin\Debug\Corpuses\eng.txt
+S:\Code\FakeTextGenerator\UnitTests\bin\Debug\Corpuses\names.txt
+S:\Code\FakeTextGenerator\UnitTests\bin\Debug\Corpuses\rus.txt
+S:\Code\FakeTextGenerator\UnitTests\bin\Debug\Corpuses\short.txt
+S:\Code\FakeTextGenerator\UnitTests\bin\Debug\Corpuses\spanish.txt
