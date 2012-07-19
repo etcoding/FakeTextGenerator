@@ -1,0 +1,9 @@
+S:\Code\FakeTextGenerator\FakeTextGenerator\bin\Release\FakeTextGenerator.dll
+S:\Code\FakeTextGenerator\FakeTextGenerator\bin\Release\FakeTextGenerator.pdb
+S:\Code\FakeTextGenerator\FakeTextGenerator\obj\Release\ResolveAssemblyReference.cache
+S:\Code\FakeTextGenerator\FakeTextGenerator\obj\Release\FakeTextGenerator.dll
+S:\Code\FakeTextGenerator\FakeTextGenerator\obj\Release\FakeTextGenerator.pdb
+t:\Code\FakeTextGenerator\FakeTextGenerator\bin\Release\FakeTextGenerator.dll
+t:\Code\FakeTextGenerator\FakeTextGenerator\bin\Release\FakeTextGenerator.pdb
+t:\Code\FakeTextGenerator\FakeTextGenerator\obj\Release\FakeTextGenerator.dll
+t:\Code\FakeTextGenerator\FakeTextGenerator\obj\Release\FakeTextGenerator.pdb

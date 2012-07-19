@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="f419b846-2b14-4afa-842b-eb845be2faed" name="eugene.tsarovski@L-CB09130874 2012-07-17 15:07:50" runUser="58NINETY\eugene.tsarovski" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="e980f982-5501-4d9c-a17c-58d207af1760">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment runDeploymentRoot="eugene.tsarovski_L-CB09130874 2012-07-17 15_07_50">
+      <DeploymentItem filename="t:\Code\FakeTextGenerator\packages\FluentAssertions.1.7.1.1\Lib\net40\FluentAssertions.dll" />
+      <DeploymentItem filename="t:\Code\FakeTextGenerator\FakeTextGenerator\bin\Debug\FakeTextGenerator.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific>
+        <UnitTestRunConfig testTypeId="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b">
+          <AssemblyResolution>
+            <TestDirectory useLoadContext="true" />
+          </AssemblyResolution>
+        </UnitTestRunConfig>
+        <WebTestRunConfiguration testTypeId="4e7599fa-5ecb-43e9-a887-cd63cf72d207">
+          <Browser name="Internet Explorer 7.0">
+            <Headers>
+              <Header name="User-Agent" value="Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)" />
+              <Header name="Accept" value="*/*" />
+              <Header name="Accept-Language" value="{{$IEAcceptLanguage}}" />
+              <Header name="Accept-Encoding" value="GZIP" />
+            </Headers>
+          </Browser>
+        </WebTestRunConfiguration>
+      </TestTypeSpecific>
+      <AgentRule name="LocalMachineDefaultRole">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-07-17T15:07:50.2451458-04:00" queuing="2012-07-17T15:07:51.3131458-04:00" start="2012-07-17T15:07:51.4081458-04:00" finish="2012-07-17T15:08:04.1241458-04:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="19" executed="19" passed="19" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="MakeText" storage="t:\code\faketextgenerator\unittests\bin\debug\unittests.dll" id="9e4613d9-5d4d-9083-b4c2-bf539c7e8a6c">
+      <Execution id="8e46f275-ae5c-4a02-a456-902a0df519cd" />
+      <TestMethod codeBase="t:/Code/FakeTextGenerator/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.CodeSamples, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="MakeText" />
+    </UnitTest>
+    <UnitTest name="WordCreator_ShouldNotGenerateWords_ThatHave3SameAdjacentLetters" storage="t:\code\faketextgenerator\unittests\bin\debug\unittests.dll" id="9d39a5bb-bcb4-20e2-92b0-e7417a54b202">
+      <Execution id="f9a4e5ab-2c67-44c5-9cf1-63d52bd4157d" />
+      <TestMethod codeBase="t:/Code/FakeTextGenerator/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.TextGeneratorTest, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WordCreator_ShouldNotGenerateWords_ThatHave3SameAdjacentLetters" />
+    </UnitTest>
+    <UnitTest name="MakeNames" storage="t:\code\faketextgenerator\unittests\bin\debug\unittests.dll" id="62371a00-5bf6-77d9-20b9-a9926459feec">
+      <Execution id="cec44797-79eb-4989-86b6-588134279f8e" />
+      <TestMethod codeBase="t:/Code/FakeTextGenerator/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.CodeSamples, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="MakeNames" />
+    </UnitTest>
+    <UnitTest name="CreateNonEnglishTextTest2" storage="t:\code\faketextgenerator\unittests\bin\debug\unittests.dll" id="59b1330a-edcc-5b09-dfd3-1333e90799c0">
+      <DeploymentItems>
+        <DeploymentItem filename="Corpuses\spanish.txt" outputDirectory="Corpuses" />
+      </DeploymentItems>
+      <Execution id="8c4cce73-6833-4775-9daf-8958e6642c78" />
+      <TestMethod codeBase="t:/Code/FakeTextGenerator/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.TextGeneratorTest, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateNonEnglishTextTest2" />
+    </UnitTest>
+    <UnitTest name="MakeWords" storage="t:\code\faketextgenerator\unittests\bin\debug\unittests.dll" id="19e76c4a-a9cd-f8c5-46f4-485e921441c2">
+      <Execution id="b4c5e3b7-4624-4247-afcb-368f1447c68c" />
+      <TestMethod codeBase="t:/Code/FakeTextGenerator/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.CodeSamples, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="MakeWords" />
+    </UnitTest>
+    <UnitTest name="WordCreator_ShouldMakeNames" storage="t:\code\faketextgenerator\unittests\bin\debug\unittests.dll" id="37d113b0-367a-13f2-f940-0d21ae5efacc">
+      <Execution id="59863f9b-b2ab-4e5d-b7d4-88cfb8832b26" />
+      <TestMethod codeBase="t:/Code/FakeTextGenerator/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.TextGeneratorTest, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WordCreator_ShouldMakeNames" />
+    </UnitTest>
+    <UnitTest name="MakeRussianAndSpanishText" storage="t:\code\faketextgenerator\unittests\bin\debug\unittests.dll" id="09ea6729-4353-5601-2989-91ec88cc7092">
+      <DeploymentItems>
+        <DeploymentItem filename="Corpuses\rus.txt" outputDirectory="Corpuses" />
+        <DeploymentItem filename="Corpuses\spanish.txt" outputDirectory="Corpuses" />
+      </DeploymentItems>
+      <Execution id="c8e41e2b-7f74-4b79-a75a-42c80ee75335" />
+      <TestMethod codeBase="t:/Code/FakeTextGenerator/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.CodeSamples, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="MakeRussianAndSpanishText" />
+    </UnitTest>
+    <UnitTest name="CreateText_ShouldWorkOffSmallCorpus" storage="t:\code\faketextgenerator\unittests\bin\debug\unittests.dll" id="de5d1378-ab6f-1fe9-f35e-821081d82f76">
+      <DeploymentItems>
+        <DeploymentItem filename="Corpuses\short.txt" outputDirectory="Corpuses" />
+      </DeploymentItems>
+      <Execution id="1172e47e-e9a3-4c8e-91ba-64dcc5f0b95c" />
+      <TestMethod codeBase="t:/Code/FakeTextGenerator/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.TextGeneratorTest, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateText_ShouldWorkOffSmallCorpus" />
+    </UnitTest>
+    <UnitTest name="WordCreator_ShouldMakeWords" storage="t:\code\faketextgenerator\unittests\bin\debug\unittests.dll" id="072b5023-4889-66cb-43b4-bcbd56580ea1">
+      <Execution id="14789fea-54ae-4b13-9187-afbcf5cedf20" />
+      <TestMethod codeBase="t:/Code/FakeTextGenerator/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.TextGeneratorTest, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WordCreator_ShouldMakeWords" />
+    </UnitTest>
+    <UnitTest name="Text_ShouldNotHaveSentences_LongerThan_MaxSentenceLength" storage="t:\code\faketextgenerator\unittests\bin\debug\unittests.dll" id="87ab33e8-9d3c-dd2b-f64d-7bb9727670d1">
+      <Execution id="e229a10a-ee67-4dbd-82d9-48d34c5a4f6b" />
+      <TestMethod codeBase="t:/Code/FakeTextGenerator/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.TextGeneratorTest, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Text_ShouldNotHaveSentences_LongerThan_MaxSentenceLength" />
+    </UnitTest>
+    <UnitTest name="CreateTextTest" storage="t:\code\faketextgenerator\unittests\bin\debug\unittests.dll" id="c92b14cb-c98c-634f-3a86-d879dc472d47">
+      <Execution id="cd5e1562-b7da-40c8-978a-4fb1a25c106c" />
+      <TestMethod codeBase="t:/Code/FakeTextGenerator/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.TextGeneratorTest, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateTextTest" />
+    </UnitTest>
+    <UnitTest name="SerializeToFileTest" storage="t:\code\faketextgenerator\unittests\bin\debug\unittests.dll" id="bd3bcb1c-00c4-daa8-3a32-b2992f65136b">
+      <DeploymentItems>
+        <DeploymentItem filename="Corpuses\eng.txt" outputDirectory="Corpuses" />
+        <DeploymentItem filename="Corpuses\names.txt" outputDirectory="Corpuses" />
+      </DeploymentItems>
+      <Execution id="30beda93-80af-4a47-bd86-3c030276811f" />
+      <TestMethod codeBase="t:/Code/FakeTextGenerator/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.CorpusTest, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SerializeToFileTest" />
+    </UnitTest>
+    <UnitTest name="CreateNonEnglishTextTest" storage="t:\code\faketextgenerator\unittests\bin\debug\unittests.dll" id="5ec45dcd-dda2-a114-b6d1-921c0af71bf7">
+      <DeploymentItems>
+        <DeploymentItem filename="Corpuses\rus.txt" outputDirectory="Corpuses" />
+      </DeploymentItems>
+      <Execution id="995cb800-1425-4c94-8672-74776bc72f70" />
+      <TestMethod codeBase="t:/Code/FakeTextGenerator/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.TextGeneratorTest, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateNonEnglishTextTest" />
+    </UnitTest>
+    <UnitTest name="WordCreator_ShouldMakeLongWords" storage="t:\code\faketextgenerator\unittests\bin\debug\unittests.dll" id="c3ee2483-7528-25ca-0bab-bfd4e5050b50">
+      <Execution id="4b81d172-cfba-42e2-87e0-ba9f35735720" />
+      <TestMethod codeBase="t:/Code/FakeTextGenerator/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.TextGeneratorTest, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WordCreator_ShouldMakeLongWords" />
+    </UnitTest>
+    <UnitTest name="WordCreatorConstructors_ShouldNotTrowExceptions" storage="t:\code\faketextgenerator\unittests\bin\debug\unittests.dll" id="48ef9f09-52f3-d397-6924-b2876abe3a16">
+      <Execution id="c18d765d-504d-4123-b9ba-71deb7a7b546" />
+      <TestMethod codeBase="t:/Code/FakeTextGenerator/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.TextGeneratorTest, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WordCreatorConstructors_ShouldNotTrowExceptions" />
+    </UnitTest>
+    <UnitTest name="CorpusShouldContainDistinctLetters" storage="t:\code\faketextgenerator\unittests\bin\debug\unittests.dll" id="301681a7-bc13-5a4f-f2d7-1481c3dc8556">
+      <Execution id="66247064-d0e6-4c68-916a-b1b44799f174" />
+      <TestMethod codeBase="t:/Code/FakeTextGenerator/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.CorpusTest, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CorpusShouldContainDistinctLetters" />
+    </UnitTest>
+    <UnitTest name="IWant_TextGenerator_ToTakeLessThan_500ms_ToGenerate_1000Words" storage="t:\code\faketextgenerator\unittests\bin\debug\unittests.dll" id="446f59bb-4e2c-a21b-057b-75294a5fdee2">
+      <Execution id="556958f8-0ff4-4318-bbdd-e361ae015a17" />
+      <TestMethod codeBase="t:/Code/FakeTextGenerator/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.TextGeneratorTest, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="IWant_TextGenerator_ToTakeLessThan_500ms_ToGenerate_1000Words" />
+    </UnitTest>
+    <UnitTest name="ProcessTextFile_ShouldProduceCorpus" storage="t:\code\faketextgenerator\unittests\bin\debug\unittests.dll" id="8f559d40-b87e-af1d-1c51-b8a2bc8de667">
+      <DeploymentItems>
+        <DeploymentItem filename="Corpuses\eng.txt" outputDirectory="Corpuses" />
+      </DeploymentItems>
+      <Execution id="a348223b-fa63-48f3-a2d9-c7abf4331803" />
+      <TestMethod codeBase="t:/Code/FakeTextGenerator/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.CorpusTest, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ProcessTextFile_ShouldProduceCorpus" />
+    </UnitTest>
+    <UnitTest name="DeserializeFromFile_ShouldRecreateCorpus" storage="t:\code\faketextgenerator\unittests\bin\debug\unittests.dll" id="d88fe05e-74e0-72cc-66d5-bb372dd2d4f3">
+      <DeploymentItems>
+        <DeploymentItem filename="Corpuses\eng.txt" outputDirectory="Corpuses" />
+      </DeploymentItems>
+      <Execution id="23d26c20-12bd-4f37-a7f4-3456f9f6a2fa" />
+      <TestMethod codeBase="t:/Code/FakeTextGenerator/UnitTests/bin/Debug/UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="UnitTests.CorpusTest, UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DeserializeFromFile_ShouldRecreateCorpus" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="072b5023-4889-66cb-43b4-bcbd56580ea1" executionId="14789fea-54ae-4b13-9187-afbcf5cedf20" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="09ea6729-4353-5601-2989-91ec88cc7092" executionId="c8e41e2b-7f74-4b79-a75a-42c80ee75335" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="19e76c4a-a9cd-f8c5-46f4-485e921441c2" executionId="b4c5e3b7-4624-4247-afcb-368f1447c68c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="301681a7-bc13-5a4f-f2d7-1481c3dc8556" executionId="66247064-d0e6-4c68-916a-b1b44799f174" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="37d113b0-367a-13f2-f940-0d21ae5efacc" executionId="59863f9b-b2ab-4e5d-b7d4-88cfb8832b26" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="446f59bb-4e2c-a21b-057b-75294a5fdee2" executionId="556958f8-0ff4-4318-bbdd-e361ae015a17" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="48ef9f09-52f3-d397-6924-b2876abe3a16" executionId="c18d765d-504d-4123-b9ba-71deb7a7b546" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="59b1330a-edcc-5b09-dfd3-1333e90799c0" executionId="8c4cce73-6833-4775-9daf-8958e6642c78" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5ec45dcd-dda2-a114-b6d1-921c0af71bf7" executionId="995cb800-1425-4c94-8672-74776bc72f70" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="62371a00-5bf6-77d9-20b9-a9926459feec" executionId="cec44797-79eb-4989-86b6-588134279f8e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="87ab33e8-9d3c-dd2b-f64d-7bb9727670d1" executionId="e229a10a-ee67-4dbd-82d9-48d34c5a4f6b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8f559d40-b87e-af1d-1c51-b8a2bc8de667" executionId="a348223b-fa63-48f3-a2d9-c7abf4331803" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9d39a5bb-bcb4-20e2-92b0-e7417a54b202" executionId="f9a4e5ab-2c67-44c5-9cf1-63d52bd4157d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9e4613d9-5d4d-9083-b4c2-bf539c7e8a6c" executionId="8e46f275-ae5c-4a02-a456-902a0df519cd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bd3bcb1c-00c4-daa8-3a32-b2992f65136b" executionId="30beda93-80af-4a47-bd86-3c030276811f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c3ee2483-7528-25ca-0bab-bfd4e5050b50" executionId="4b81d172-cfba-42e2-87e0-ba9f35735720" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c92b14cb-c98c-634f-3a86-d879dc472d47" executionId="cd5e1562-b7da-40c8-978a-4fb1a25c106c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d88fe05e-74e0-72cc-66d5-bb372dd2d4f3" executionId="23d26c20-12bd-4f37-a7f4-3456f9f6a2fa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="de5d1378-ab6f-1fe9-f35e-821081d82f76" executionId="1172e47e-e9a3-4c8e-91ba-64dcc5f0b95c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="14789fea-54ae-4b13-9187-afbcf5cedf20" testId="072b5023-4889-66cb-43b4-bcbd56580ea1" testName="WordCreator_ShouldMakeWords" computerName="L-CB09130874" duration="00:00:00.0809483" startTime="2012-07-17T15:07:51.7611458-04:00" endTime="2012-07-17T15:07:53.0191458-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="14789fea-54ae-4b13-9187-afbcf5cedf20">
+    </UnitTestResult>
+    <UnitTestResult executionId="c8e41e2b-7f74-4b79-a75a-42c80ee75335" testId="09ea6729-4353-5601-2989-91ec88cc7092" testName="MakeRussianAndSpanishText" computerName="L-CB09130874" duration="00:00:00.1284584" startTime="2012-07-17T15:07:53.0351458-04:00" endTime="2012-07-17T15:07:53.1721458-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c8e41e2b-7f74-4b79-a75a-42c80ee75335">
+    </UnitTestResult>
+    <UnitTestResult executionId="b4c5e3b7-4624-4247-afcb-368f1447c68c" testId="19e76c4a-a9cd-f8c5-46f4-485e921441c2" testName="MakeWords" computerName="L-CB09130874" duration="00:00:00.0300051" startTime="2012-07-17T15:07:53.1811458-04:00" endTime="2012-07-17T15:07:53.2171458-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b4c5e3b7-4624-4247-afcb-368f1447c68c">
+    </UnitTestResult>
+    <UnitTestResult executionId="66247064-d0e6-4c68-916a-b1b44799f174" testId="301681a7-bc13-5a4f-f2d7-1481c3dc8556" testName="CorpusShouldContainDistinctLetters" computerName="L-CB09130874" duration="00:00:00.0161502" startTime="2012-07-17T15:07:53.2251458-04:00" endTime="2012-07-17T15:07:53.2461458-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="66247064-d0e6-4c68-916a-b1b44799f174">
+    </UnitTestResult>
+    <UnitTestResult executionId="59863f9b-b2ab-4e5d-b7d4-88cfb8832b26" testId="37d113b0-367a-13f2-f940-0d21ae5efacc" testName="WordCreator_ShouldMakeNames" computerName="L-CB09130874" duration="00:00:00.0354752" startTime="2012-07-17T15:07:53.2511458-04:00" endTime="2012-07-17T15:07:53.2901458-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="59863f9b-b2ab-4e5d-b7d4-88cfb8832b26">
+    </UnitTestResult>
+    <UnitTestResult executionId="556958f8-0ff4-4318-bbdd-e361ae015a17" testId="446f59bb-4e2c-a21b-057b-75294a5fdee2" testName="IWant_TextGenerator_ToTakeLessThan_500ms_ToGenerate_1000Words" computerName="L-CB09130874" duration="00:00:00.4678657" startTime="2012-07-17T15:07:53.2951458-04:00" endTime="2012-07-17T15:07:53.7661458-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="556958f8-0ff4-4318-bbdd-e361ae015a17">
+      <Output>
+        <DebugTrace>Total elapsed: 455 ms
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c18d765d-504d-4123-b9ba-71deb7a7b546" testId="48ef9f09-52f3-d397-6924-b2876abe3a16" testName="WordCreatorConstructors_ShouldNotTrowExceptions" computerName="L-CB09130874" duration="00:00:00.0569965" startTime="2012-07-17T15:07:53.7721458-04:00" endTime="2012-07-17T15:07:53.8341458-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c18d765d-504d-4123-b9ba-71deb7a7b546">
+    </UnitTestResult>
+    <UnitTestResult executionId="8c4cce73-6833-4775-9daf-8958e6642c78" testId="59b1330a-edcc-5b09-dfd3-1333e90799c0" testName="CreateNonEnglishTextTest2" computerName="L-CB09130874" duration="00:00:00.1325832" startTime="2012-07-17T15:07:53.8431458-04:00" endTime="2012-07-17T15:07:53.9801458-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8c4cce73-6833-4775-9daf-8958e6642c78">
+    </UnitTestResult>
+    <UnitTestResult executionId="995cb800-1425-4c94-8672-74776bc72f70" testId="5ec45dcd-dda2-a114-b6d1-921c0af71bf7" testName="CreateNonEnglishTextTest" computerName="L-CB09130874" duration="00:00:00.1365397" startTime="2012-07-17T15:07:53.9861458-04:00" endTime="2012-07-17T15:07:54.1261458-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="995cb800-1425-4c94-8672-74776bc72f70">
+    </UnitTestResult>
+    <UnitTestResult executionId="cec44797-79eb-4989-86b6-588134279f8e" testId="62371a00-5bf6-77d9-20b9-a9926459feec" testName="MakeNames" computerName="L-CB09130874" duration="00:00:00.0103316" startTime="2012-07-17T15:07:54.1371458-04:00" endTime="2012-07-17T15:07:54.1511458-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cec44797-79eb-4989-86b6-588134279f8e">
+    </UnitTestResult>
+    <UnitTestResult executionId="e229a10a-ee67-4dbd-82d9-48d34c5a4f6b" testId="87ab33e8-9d3c-dd2b-f64d-7bb9727670d1" testName="Text_ShouldNotHaveSentences_LongerThan_MaxSentenceLength" computerName="L-CB09130874" duration="00:00:04.4741163" startTime="2012-07-17T15:07:54.1631458-04:00" endTime="2012-07-17T15:07:58.6421458-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e229a10a-ee67-4dbd-82d9-48d34c5a4f6b">
+    </UnitTestResult>
+    <UnitTestResult executionId="a348223b-fa63-48f3-a2d9-c7abf4331803" testId="8f559d40-b87e-af1d-1c51-b8a2bc8de667" testName="ProcessTextFile_ShouldProduceCorpus" computerName="L-CB09130874" duration="00:00:00.2019755" startTime="2012-07-17T15:07:58.6571458-04:00" endTime="2012-07-17T15:07:58.8641458-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a348223b-fa63-48f3-a2d9-c7abf4331803">
+    </UnitTestResult>
+    <UnitTestResult executionId="f9a4e5ab-2c67-44c5-9cf1-63d52bd4157d" testId="9d39a5bb-bcb4-20e2-92b0-e7417a54b202" testName="WordCreator_ShouldNotGenerateWords_ThatHave3SameAdjacentLetters" computerName="L-CB09130874" duration="00:00:04.5042352" startTime="2012-07-17T15:07:58.8741458-04:00" endTime="2012-07-17T15:08:03.3831458-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f9a4e5ab-2c67-44c5-9cf1-63d52bd4157d">
+    </UnitTestResult>
+    <UnitTestResult executionId="8e46f275-ae5c-4a02-a456-902a0df519cd" testId="9e4613d9-5d4d-9083-b4c2-bf539c7e8a6c" testName="MakeText" computerName="L-CB09130874" duration="00:00:00.0201500" startTime="2012-07-17T15:08:03.3931458-04:00" endTime="2012-07-17T15:08:03.4171458-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8e46f275-ae5c-4a02-a456-902a0df519cd">
+    </UnitTestResult>
+    <UnitTestResult executionId="30beda93-80af-4a47-bd86-3c030276811f" testId="bd3bcb1c-00c4-daa8-3a32-b2992f65136b" testName="SerializeToFileTest" computerName="L-CB09130874" duration="00:00:00.0171363" startTime="2012-07-17T15:08:03.4261458-04:00" endTime="2012-07-17T15:08:03.4471458-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="30beda93-80af-4a47-bd86-3c030276811f">
+    </UnitTestResult>
+    <UnitTestResult executionId="4b81d172-cfba-42e2-87e0-ba9f35735720" testId="c3ee2483-7528-25ca-0bab-bfd4e5050b50" testName="WordCreator_ShouldMakeLongWords" computerName="L-CB09130874" duration="00:00:00.1610297" startTime="2012-07-17T15:08:03.4541458-04:00" endTime="2012-07-17T15:08:03.6201458-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4b81d172-cfba-42e2-87e0-ba9f35735720">
+    </UnitTestResult>
+    <UnitTestResult executionId="cd5e1562-b7da-40c8-978a-4fb1a25c106c" testId="c92b14cb-c98c-634f-3a86-d879dc472d47" testName="CreateTextTest" computerName="L-CB09130874" duration="00:00:00.1006535" startTime="2012-07-17T15:08:03.6311458-04:00" endTime="2012-07-17T15:08:03.7371458-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cd5e1562-b7da-40c8-978a-4fb1a25c106c">
+    </UnitTestResult>
+    <UnitTestResult executionId="23d26c20-12bd-4f37-a7f4-3456f9f6a2fa" testId="d88fe05e-74e0-72cc-66d5-bb372dd2d4f3" testName="DeserializeFromFile_ShouldRecreateCorpus" computerName="L-CB09130874" duration="00:00:00.1846986" startTime="2012-07-17T15:08:03.7421458-04:00" endTime="2012-07-17T15:08:03.9301458-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="23d26c20-12bd-4f37-a7f4-3456f9f6a2fa">
+    </UnitTestResult>
+    <UnitTestResult executionId="1172e47e-e9a3-4c8e-91ba-64dcc5f0b95c" testId="de5d1378-ab6f-1fe9-f35e-821081d82f76" testName="CreateText_ShouldWorkOffSmallCorpus" computerName="L-CB09130874" duration="00:00:00.0967090" startTime="2012-07-17T15:08:03.9411458-04:00" endTime="2012-07-17T15:08:04.0421458-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1172e47e-e9a3-4c8e-91ba-64dcc5f0b95c">
+    </UnitTestResult>
+  </Results>
+</TestRun>

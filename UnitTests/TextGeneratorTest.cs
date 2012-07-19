@@ -6,15 +6,17 @@ using System.IO;
 using System.Text.RegularExpressions;
 using System.Text;
 using System.Collections.Generic;
+using System.Linq;
+using System.Diagnostics;
 
 namespace UnitTests
 {
     /// <summary>
     ///This is a test class for WordCreatorTest and is intended
-    ///to contain all WordCreatorTest Unit Tests
+    ///to contain all TextGenerator Unit Tests
     ///</summary>
     [TestClass()]
-    public class WordGeneratorTest
+    public class TextGeneratorTest
     {
         private TestContext testContextInstance;
 
@@ -95,8 +97,6 @@ namespace UnitTests
             }
         }
 
-
-
         [TestMethod()]
         public void WordCreator_ShouldMakeLongWords()
         {
@@ -160,6 +160,39 @@ namespace UnitTests
             string text = wc.GenerateText(2000);
             text.Split(' ').Length.Should().Be(2000);
             text.Should().EndWith(".");
+        }
+
+        [TestMethod()]
+        public void WordCreator_ShouldNotGenerateWords_ThatHave3SameAdjacentLetters()
+        {
+            TextGenerator wc = new TextGenerator();
+            string text = wc.GenerateText(10000);
+
+            string[] split = text.Split(' ', '.');
+            split.Any(x => Regex.Match(x, "(.)\\1{2,}").Groups.Count > 1).Should().BeFalse();
+        }
+
+        [TestMethod()]
+        public void Text_ShouldNotHaveSentences_LongerThan_MaxSentenceLength()
+        {
+            TextGenerator wc = new TextGenerator();
+            string text = wc.GenerateText(10000);
+
+            string[] split = text.Split('.');
+            split.Count(x => x.Split(' ').Length > wc.MaxSentenceLength).Should().Be(0);
+        }
+
+        /// <summary>
+        /// Tested on i5 2.3GHz
+        /// </summary>
+        [TestMethod()]
+        public void IWant_TextGenerator_ToTakeLessThan_500ms_ToGenerate_1000Words()
+        {
+            TextGenerator wc = new TextGenerator();
+            Stopwatch sw = Stopwatch.StartNew();
+            string text = wc.GenerateText(1000);
+            Debug.WriteLine("Total elapsed: " + sw.ElapsedMilliseconds + " ms");
+            sw.ElapsedMilliseconds.Should().BeLessOrEqualTo(500);
         }
     }
 }

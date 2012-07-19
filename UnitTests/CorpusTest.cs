@@ -7,11 +7,9 @@ using System.Linq;
 
 namespace UnitTests
 {
-    
-    
     /// <summary>
     ///This is a test class for CorpusTest and is intended
-    ///to contain all CorpusTest Unit Tests
+    ///to contain all Corpus Unit Tests
     ///</summary>
     [TestClass()]
     public class CorpusTest

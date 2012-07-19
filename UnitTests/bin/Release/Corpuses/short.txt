@@ -1,0 +1,1 @@
+When first learning about sets, many developers assume they are tantamount to collections, like a List.

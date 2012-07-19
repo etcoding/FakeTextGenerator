@@ -3,3 +3,7 @@ S:\Code\FakeTextGenerator\FakeTextGenerator\bin\Debug\FakeTextGenerator.pdb
 S:\Code\FakeTextGenerator\FakeTextGenerator\obj\Debug\ResolveAssemblyReference.cache
 S:\Code\FakeTextGenerator\FakeTextGenerator\obj\Debug\FakeTextGenerator.dll
 S:\Code\FakeTextGenerator\FakeTextGenerator\obj\Debug\FakeTextGenerator.pdb
+t:\Code\FakeTextGenerator\FakeTextGenerator\bin\Debug\FakeTextGenerator.dll
+t:\Code\FakeTextGenerator\FakeTextGenerator\bin\Debug\FakeTextGenerator.pdb
+t:\Code\FakeTextGenerator\FakeTextGenerator\obj\Debug\FakeTextGenerator.dll
+t:\Code\FakeTextGenerator\FakeTextGenerator\obj\Debug\FakeTextGenerator.pdb
