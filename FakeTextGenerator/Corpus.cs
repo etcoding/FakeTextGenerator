@@ -13,13 +13,28 @@ namespace ET.FakeText
     [Serializable]
     public class Corpus
     {
+        /// <summary>
+        /// Gets the number of words in corpus.
+        /// </summary>
         public int WordCount { get; private set; }
+        /// <summary>
+        /// Gets the number of characters in corpus.
+        /// </summary>
         public int CharCount { get; private set; }
         List<LetterStats> letters = new List<LetterStats>();
+        /// <summary>
+        /// Gets the letters data collection in corpus.
+        /// </summary>
         public ReadOnlyCollection<LetterStats> Letters { get { return this.letters.AsReadOnly(); } }
 
         private Corpus() { }
 
+        /// <summary>
+        /// Creates the corpus from text.
+        /// Text should be long enough to generate decent results (e.g. 10Kb+).
+        /// </summary>
+        /// <param name="text">The text.</param>
+        /// <returns></returns>
         public static Corpus CreateFromText(string text)
         {
             Dictionary<LetterStats, LetterStats> letterData = new Dictionary<LetterStats, LetterStats>();
@@ -51,9 +66,9 @@ namespace ET.FakeText
         }
 
         /// <summary>
-        /// Serializes corpus to a file.
+        /// Serializes corpus to a binary file.
         /// </summary>
-        /// <param name="fileName">Name of the file.</param>
+        /// <param name="fileName">Name of the file, including the path.</param>
         public void SerializeToFile(string fileName)
         {
             BinaryFormatter serializer = new BinaryFormatter();
@@ -64,9 +79,9 @@ namespace ET.FakeText
         }
 
         /// <summary>
-        /// Deserializes corpus from a file.
+        /// Deserializes corpus from a binary file.
         /// </summary>
-        /// <param name="fileName">Name of the file.</param>
+        /// <param name="fileName">Name of the file, including the path.</param>
         /// <returns></returns>
         public static Corpus DeserializeFromFile(string fileName)
         {
@@ -82,7 +97,7 @@ namespace ET.FakeText
         /// <summary>
         /// Deserializes corpus from a file, which contains serialized corpus and was embedded  as a resource.
         /// </summary>
-        /// <param name="name">The name.</param>
+        /// <param name="name">The name of the file. Only needs to contain the file name with extension.</param>
         /// <returns></returns>
         public static Corpus DeserializeFromEmbeddedResource(string name)
         {

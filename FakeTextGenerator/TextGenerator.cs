@@ -12,7 +12,7 @@ namespace ET.FakeText
         private WordTypes wordType = WordTypes.Word;
         private Random rand = new Random();
 
-        private int maxSentenceLength = 25;
+        protected int maxSentenceLength = 25;
         /// <summary>
         /// Gets or sets the length of the maximum number of words in sentence. Default is 25.
         /// </summary>
@@ -50,7 +50,7 @@ namespace ET.FakeText
         /// <summary>
         /// Creates a fake word.
         /// </summary>
-        /// <param name="length">The length.</param>
+        /// <param name="length">The desired word length.</param>
         /// <returns></returns>
         public string GenerateWord(int length)
         {
@@ -124,7 +124,6 @@ namespace ET.FakeText
             return selected;
         }
 
-
         /// <summary>
         /// This method will create a dictionary with characters as key, and a range for this character. Range is derived from character's frequency.
         /// </summary>
@@ -145,6 +144,11 @@ namespace ET.FakeText
             return ranged;
         }
 
+        /// <summary>
+        /// Generates the random text.
+        /// </summary>
+        /// <param name="wordCount">Number of words to generate.</param>
+        /// <returns></returns>
         public string GenerateText(int wordCount)
         {
             StringBuilder sbText = new StringBuilder();

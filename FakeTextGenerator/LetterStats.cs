@@ -5,6 +5,9 @@ using System.Text;
 
 namespace ET.FakeText
 {
+    /// <summary>
+    /// Defines statistics for the letters in corpus.
+    /// </summary>
     [Serializable]
     public struct LetterStats : IEquatable<LetterStats>
     {
@@ -35,7 +38,7 @@ namespace ET.FakeText
 
         public override int GetHashCode()
         {
-            // taken from SO Jon Skeet's answer
+            // taken from Jon Skeet's answer on SO
             int hash = 17;
             hash = hash * 31 + this.Letter;
             hash = hash * 31 + this.PreviousLetter;
@@ -43,6 +46,12 @@ namespace ET.FakeText
             return hash;
         }
 
+        /// <summary>
+        /// Returns a <see cref="System.String"/> that represents this instance (Letter - Previous Letter - Position in word)
+        /// </summary>
+        /// <returns>
+        /// A <see cref="System.String"/> that represents this instance.
+        /// </returns>
         public override string ToString()
         {
             return this.Letter + " - " + this.PreviousLetter + " - " + this.LetterPositionInWord;
