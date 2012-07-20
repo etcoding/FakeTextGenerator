@@ -182,6 +182,15 @@ namespace UnitTests
             split.Count(x => x.Split(' ').Length > wc.MaxSentenceLength).Should().Be(0);
         }
 
+        [TestMethod()]
+        public void Text_ShouldNotEndWithDoubleDots()
+        {
+            TextGenerator wc = new TextGenerator();
+            string text = wc.GenerateText(50000);
+
+            text.Should().NotContain("..");
+        }
+
         /// <summary>
         /// Tested on i5 2.3GHz
         /// </summary>

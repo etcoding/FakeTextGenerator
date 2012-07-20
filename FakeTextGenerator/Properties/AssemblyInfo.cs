@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("FakeTextGenerator")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Create dummy text or names reminding real ones. This library works by analyzing real texts , and can be used to geneate texts in various languages (or, rather, code pages - it does not generate real words).")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("58Ninety Inc")]
+[assembly: AssemblyCompany("Etcoding")]
 [assembly: AssemblyProduct("FakeTextGenerator")]
-[assembly: AssemblyCopyright("Copyright © 58Ninety Inc 2012")]
+[assembly: AssemblyCopyright("Copyright © Evgeni Tsarovski 2012")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion("1.0.1.0")]
+[assembly: AssemblyFileVersion("1.0.1.0")]

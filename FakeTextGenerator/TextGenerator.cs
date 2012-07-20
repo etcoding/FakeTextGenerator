@@ -181,9 +181,9 @@ namespace ET.FakeText
                 }
             }
 
-            string text = sbText.ToString();
+            string text = sbText.ToString().TrimEnd();
             if (!text.EndsWith("."))
-                text = text.TrimEnd() + ".";
+                text = text + ".";
 
             return text;
         }
