@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Diagnostics;
+using System.Globalization;
 
 namespace ET.FakeText
 {
@@ -11,6 +12,9 @@ namespace ET.FakeText
         private Corpus corpus;
         private WordTypes wordType = WordTypes.Word;
         private Random rand = new Random();
+        private static List<string> cachedWords = new List<string>(1000);
+
+        private static Lazy<TextGenerator> instance = new Lazy<TextGenerator>(() => new TextGenerator());
 
         protected int maxSentenceLength = 25;
         /// <summary>
@@ -83,7 +87,7 @@ namespace ET.FakeText
         private char PickNextLetter(char[] prev2Letters, int position)
         {
             List<LetterStats> letters = new List<LetterStats>(this.corpus.Letters.Count / 90);  // /90 seems to work well to define capacity
-            //// This is about 30% faster than an equivalent LINQ statement
+            // This is about 30% faster than an equivalent LINQ statement
             foreach (var letter in this.corpus.Letters)
             {
                 if (letter.LetterPositionInWord == position && (position == 0 ? true : letter.PreviousLetter == prev2Letters[1]))
@@ -155,15 +159,29 @@ namespace ET.FakeText
             int numOfWords = 0;
             int sentenceLen = rand.Next(this.MaxSentenceLength);
             int numOfWordsInSentence = 0;
+            TextInfo currentTextInfo =  System.Globalization.CultureInfo.CurrentCulture.TextInfo;
 
             while (numOfWords < wordCount)
             {
                 int wordLen = rand.Next(1, 10);
-                string word = this.GenerateWord(wordLen);
+
+                // once in a while pull a word from a cache
+                string word = null;
+                if (rand.Next(100) * numOfWords > 25000) // so if user generates lot of words, every word after 2500 words
+                    word = this.GetRandomCachedWord();
+
+                if (word == null)
+                {
+                    word = this.GenerateWord(wordLen);
+
+                    if (cachedWords.Count < 1000)
+                        lock (cachedWords)
+                            cachedWords.Add(word);
+                }
 
                 Debug.Assert(!string.IsNullOrWhiteSpace(word));
                 if (numOfWordsInSentence == 0)
-                    word = System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(word);
+                    word = currentTextInfo.ToTitleCase(word);
 
                 sbText.Append(word);
                 numOfWords++;
@@ -187,6 +205,23 @@ namespace ET.FakeText
 
             return text;
         }
+
+        private string GetRandomCachedWord()
+        {
+            if (cachedWords.Count == 0)
+                return null;
+            lock (cachedWords)
+            {
+                int idx = rand.Next(0, cachedWords.Count - 1);
+                return cachedWords[idx];
+            }
+
+        }
+
+        //public static string GenerateText(int wordCount)
+        //{
+        //    return TextGenerator.instance.Value.GenerateText(wordCount);
+        //}
 
 
         private class Range

@@ -203,5 +203,22 @@ namespace UnitTests
             Debug.WriteLine("Total elapsed: " + sw.ElapsedMilliseconds + " ms");
             sw.ElapsedMilliseconds.Should().BeLessOrEqualTo(500);
         }
+
+
+        [TestMethod()]
+        public void TextGenerator_ShouldTakeLessThan_500ms_ToGenerate_10000Words()
+        {
+            TextGenerator wc = new TextGenerator();
+            Stopwatch sw = Stopwatch.StartNew();
+            for (int i = 0; i < 4; i++)
+            {
+                string text = wc.GenerateText(10000);
+            }
+
+            Debug.WriteLine("Total elapsed: " + sw.ElapsedMilliseconds / 4 + " ms");
+
+            (sw.ElapsedMilliseconds / 4).Should().BeLessOrEqualTo(500);
+
+        }
     }
 }
