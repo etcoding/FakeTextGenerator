@@ -1,18 +1,13 @@
 ﻿FakeTextGenerator
 ==========
 
-This library allows to create dummy text reminding real one, not dissimilar to lorem ipsum. However, this library works by analyzing real texts , and can 
-be used to geneate texts in various languages (or, rather, code pages - it does not generate real words). The analyzing algorithm is a bit naive, probably,
-but it works fairly well for generating text that doesn't look like a fully random collection of characters, yet does not distract the reader.
+This library allows creating dummy text reminding real one, not dissimilar to lorem ipsum. However, this library works by analyzing real texts and can be used to generate texts in various languages (or, rather, code pages - it does not generate real words). The analyzing algorithm is a bit naive, probably, but it works fairly well for generating text that doesn't look like a fully random collection of characters, yet does not distract the reader.
 
-I've created this code when I needed to populate a bunch of User objects for test purposes, and needed to name them with something better than user1, user2, etc.
+I've created this code when I needed to populate a bunch of User objects for test purposes and needed to name them with something better than user1, user2, etc.
 
-Right off the bat this library can be used to generate English-like words, texts, and names - see code samples below. To generate texts in other code pages it 
-can be fed with texts in desired codepage. The texts should be fairly sizeable, in tens to hundreds Kbs. It will work off smaller texts, but result will be more like
-just a random string.
+Right off the bat, this library can be used to generate English-like words, texts, and names - see code samples below. To generate texts in other code pages it can be fed with texts in the desired codepage. The texts should be fairly sizeable, in tens to hundreds Kbs. It will work off smaller texts, but the result will be more like just a random string.
 
 It is also available as a Nuget package.
-
 
 Usage:
 ------
