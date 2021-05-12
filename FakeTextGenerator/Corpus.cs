@@ -7,6 +7,8 @@ using System.Text.RegularExpressions;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 using System.Reflection;
+using System.Runtime.Serialization.Formatters;
+using FakeTextGenerator;
 
 namespace ET.FakeText
 {
@@ -110,6 +112,7 @@ namespace ET.FakeText
             using (Stream stream = executingAssm.GetManifestResourceStream(name))
             {
                 BinaryFormatter serializer = new BinaryFormatter();
+                serializer.Binder = new FaketextGeneratorAssemblyIndependentBinder();
                 return serializer.Deserialize(stream) as Corpus;
             }
         }
